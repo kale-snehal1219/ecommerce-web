@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSmart Organic | Smart Farming</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-seedling"></i> AgroSmart Organic
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#crop-guide">Crop Guide</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="cart-icon" onclick="openOrdersModal()" title="My Orders" style="margin-right: -10px;">
+                    <i class="fa-solid fa-box-open"></i>
+                </div>
+                <div class="cart-icon" onclick="openCart()" title="Basket">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+            <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content fade-in-up">
+            <h1>Smart Farming with <span>Organic Power</span></h1>
+            <p>Empower your farming with nature's best. Discover organic fertilizers and let our AI smartly guide your
+                crops to a greener future.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary btn-animate">Buy Fertilizer</a>
+                <a href="#" class="btn btn-secondary btn-animate" onclick="openAIChat(event)">Get AI Advice <i
+                        class="fa-solid fa-robot"></i></a>
+            </div>
+        </div>
+        <div class="wave-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.06,151.71,130.4,226.79,109.83,261.21,100.41,292.5,82.5,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products container section-padding">
+        <div class="section-header text-center fade-in-up">
+            <h2>Organic Fertilizers</h2>
+            <p>Nourish your soil naturally with our premium selections.</p>
+            <div class="underline"></div>
+        </div>
+        <div class="product-grid" id="productGrid">
+            <!-- Products injected by JS -->
+        </div>
+    </section>
+
+    <!-- Crop Guide Section -->
+    <section id="crop-guide" class="crop-guide section-padding">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Crop Guide</h2>
+                <p>Tailored organic solutions for optimal yield.</p>
+                <div class="underline mx-auto"></div>
+            </div>
+
+            <div class="guide-grid mt-4">
+                <div class="guide-card fade-in-up">
+                    <div class="guide-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+                    <h3>Wheat & Cereals</h3>
+                    <p>Best matched with <strong>Bio Fertilizers</strong> to fix nitrogen efficiently during the growing
+                        phase.</p>
+                </div>
+                <div class="guide-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="guide-icon"><i class="fa-solid fa-bowl-rice"></i></div>
+                    <h3>Rice / Paddy</h3>
+                    <p>Requires rich soil preparation. <strong>Cow Dung Compost</strong> is highly recommended.</p>
+                </div>
+                <div class="guide-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="guide-icon"><i class="fa-solid fa-carrot"></i></div>
+                    <h3>Vegetables</h3>
+                    <p>Needs consistent nutrients. <strong>Vermicompost</strong> ensures rapid growth and high quality
+                        produce.</p>
+                </div>
+                <div class="guide-card fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="guide-icon"><i class="fa-solid fa-tree"></i></div>
+                    <h3>Orchards</h3>
+                    <p>Protect roots and assure steady growth with <strong>Neem Cake Fertilizer</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about container section-padding">
+        <div class="about-flex">
+            <div class="about-img fade-in-right">
+                <img src="https://images.unsplash.com/photo-1592982537447-6f2acc22dcdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Organic Farming">
+            </div>
+            <div class="about-text fade-in-left">
+                <h2>Our Mission for Greener Earth</h2>
+                <div class="underline" style="margin: 15px 0;"></div>
+                <p>At AgroSmart Organic, we believe that the future of farming lies in returning to nature, empowered by
+                    technology. We provide 100% natural, high-quality organic fertilizers to help farmers increase yield
+                    while protecting the environment.</p>
+                <p>Our AI-driven recommendation engine ensures that you pick the exact right nutrient for your specific
+                    crop and soil needs, eliminating guesswork and boosting productivity.</p>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-check-circle"></i> 100% Organic Certified</li>
+                    <li><i class="fa-solid fa-check-circle"></i> AI-Powered Recommendations</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Nationwide Delivery</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding" style="background-color: var(--light-green);">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Get in Touch</h2>
+                <p>We're here to help your farm succeed.</p>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="contact-wrapper mt-4">
+                <div class="contact-info fade-in-right">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>42 Green Valley, Agri Dist. 10101</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 800-ORGANIC</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>support@agrosmart.organic</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form fade-in-left"
+                    onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="How can we help you?" required></textarea>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3><i class="fa-solid fa-seedling"></i> AgroSmart Organic</h3>
+                <p>Empowering farmers with smart, organic solutions for a sustainable tomorrow.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#products">Shop</a>
+                <a href="#crop-guide">Crop Guide</a>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AgroSmart Organic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Smart Assistant Chatbot Widget -->
+    <div class="ai-chatbot-widget" id="aiChatbot">
+        <div class="chat-header" onclick="toggleChat()">
+            <div><i class="fa-solid fa-robot"></i> AgroSmart AI Assistant</div>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="message bot">
+                Hello! I am your AI Smart Assistant. Ask me about crops, fertilizers, or usage! (e.g., "Which fertilizer
+                is best for wheat?")
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chatInput" placeholder="Ask a question..." onkeypress="handleChatKeypress(event)">
+            <button onclick="sendChatMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- AI Bot Floating Action Button -->
+    <div class="ai-fab" id="aiFab" onclick="toggleChat()">
+        <i class="fa-solid fa-robot"></i>
+        <span class="pulse-ring"></span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCart()">&times;</span>
+            <h2><i class="fa-solid fa-basket-shopping"></i> Your Basket</h2>
+            <div id="cartItems" class="cart-items mt-4">
+                <!-- Cart items injected here -->
+            </div>
+            <div class="cart-summary mt-4">
+                <hr>
+                <div class="d-flex justify-between mt-2">
+                    <h3>Total:</h3>
+                    <h3 id="cartTotal" style="color: var(--primary)">₹0</h3>
+                </div>
+
+                <div id="checkoutSection"
+                    style="display: none; margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">
+                    <h3 style="margin-bottom: 10px;">Delivery Details</h3>
+                    <input type="text" id="bName" placeholder="Full Name"
+                        style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                    <input type="text" id="bAddr" placeholder="Complete Address"
+                        style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                    <select id="bMethod"
+                        style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option value="upi">UPI / Scanner</option>
+                        <option value="cod">Cash on Delivery</option>
+                        <option value="card">Credit/Debit Card</option>
+                    </select>
+                    <button class="btn btn-primary w-100" onclick="processOrder()">Place Order</button>
+                </div>
+
+                <button id="proceedBtn" class="btn btn-primary w-100 mt-4" onclick="showCheckout()">Proceed to
+                    Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div id="orderSuccessModal" class="modal" style="align-items: center; justify-content: center;">
+        <div class="modal-content text-center"
+            style="animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; margin: auto;">
+            <div class="success-checkmark">
+                <div class="check-icon">
+                    <span class="icon-line line-tip"></span>
+                    <span class="icon-line line-long"></span>
+                    <div class="icon-circle"></div>
+                    <div class="icon-fix"></div>
+                </div>
+            </div>
+            <h2 style="color: var(--primary); margin: 20px 0;">Order Placed Successfully!</h2>
+            <p id="orderMsg" style="margin-bottom: 25px;"></p>
+            <button class="btn btn-primary" onclick="closeOrderSuccess(); openOrdersModal();">Track Your Order</button>
+        </div>
+    </div>
+
+    <!-- My Orders / Track Orders Modal -->
+    <div id="ordersModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeOrdersModal()">&times;</span>
+            <h2><i class="fa-solid fa-boxes-stacked"></i> My Orders</h2>
+            <div id="ordersContainer" class="mt-4" style="max-height: 50vh; overflow-y: auto;">
+                <!-- Orders injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
