@@ -1,87 +1,50 @@
 [
     {
-        "id": 1,
-        "name": "NitroBoost 46%",
-        "category": "Fertilizers",
-        "price": 45.99,
-        "image": "https://images.unsplash.com/photo-1627845348858-69234bceb3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-        "description": "Premium Urea fertilizer with 46% nitrogen for rapid and vigorous plant growth.",
-        "usage_instructions": "Apply 50kg per acre during the vegetative growth stage. Ensure soil is moist before application.",
-        "crop_recommendation": ["Corn", "Wheat", "Rice", "Sugarcane"],
-        "safety_instructions": "Wear gloves when handling. Store in a cool, dry place. Harmful if swallowed.",
-        "rating": 4.8,
-        "reviews": 124,
-        "features": ["High Nitrogen", "Water Soluble", "Fast Acting"]
+        "id": 101, "name": "Jivamrut", "category": "Liquid Fertilizer", "price": 450,
+        "image": "assets/images/jivamrut.png",
+        "description": "The backbone of natural farming. A rich liquid blend of cow dung, urine, jaggery, and flour.",
+        "rating": 4.9, "reviews": 845
     },
     {
-        "id": 2,
-        "name": "PestGuard Pro",
-        "category": "Pesticides",
-        "price": 32.50,
-        "image": "https://images.unsplash.com/photo-1589140410091-c2ccab1b045b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-        "description": "Broad-spectrum insecticide effective against aphids, caterpillars, and whiteflies.",
-        "usage_instructions": "Mix 2ml per liter of water. Spray uniformly over foliage early morning or late evening.",
-        "crop_recommendation": ["Cotton", "Soybeans", "Vegetables"],
-        "safety_instructions": "Toxic to bees. Do not apply when bees are active. Wear protective mask during spray.",
-        "rating": 4.5,
-        "reviews": 89,
-        "features": ["Systemic Action", "Long Lasting", "Rainfast in 2 hours"]
+        "id": 102, "name": "Gandul Khat (Vermicompost)", "category": "Premium Compost", "price": 250,
+        "image": "assets/images/gandul_khat.png",
+        "description": "Premium quality earthworm compost widely used for sugarcane, grapes, and pomegranates.",
+        "rating": 4.8, "reviews": 612
     },
     {
-        "id": 3,
-        "name": "WeedClear Xtreme",
-        "category": "Herbicides",
-        "price": 28.00,
-        "image": "https://images.unsplash.com/photo-1596489397630-b3b3a7a9de94?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-        "description": "Non-selective systemic herbicide for absolute control of annual and perennial weeds.",
-        "usage_instructions": "Dilute 10ml in 1 liter of water. Direct spray on target weeds avoiding desirable plants.",
-        "crop_recommendation": ["Orchards", "Vineyards", "Pre-planting field preparation"],
-        "safety_instructions": "Avoid drift to nearby crops. Wash hands thoroughly after use.",
-        "rating": 4.6,
-        "reviews": 210,
-        "features": ["Kills to the Root", "Visible Results in 48h"]
+        "id": 103, "name": "Shenkhat (Farmyard Manure)", "category": "Base Manure", "price": 300,
+        "image": "assets/images/shenkhat.jpg",
+        "description": "Well-decomposed cow and buffalo dung, the traditional and most trusted soil base.",
+        "rating": 4.7, "reviews": 920
     },
     {
-        "id": 4,
-        "name": "FungiStop Plus",
-        "category": "Fungicides",
-        "price": 41.25,
-        "image": "https://images.unsplash.com/photo-1530836369250-ef72a3f5c122?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-        "description": "Preventative and curative fungicide for control of blights, mildews, and rusts.",
-        "usage_instructions": "Apply 2.5g per liter of water at the first sign of disease. Repeat after 14 days if needed.",
-        "crop_recommendation": ["Potatoes", "Tomatoes", "Grapes", "Apples"],
-        "safety_instructions": "Keep away from waterways as it may be toxic to aquatic life.",
-        "rating": 4.7,
-        "reviews": 156,
-        "features": ["Preventative & Curative", "Broad Spectrum"]
+        "id": 104, "name": "Nimboli Pend (Neem Cake)", "category": "Pest Control", "price": 350,
+        "image": "assets/images/nimboli_pend.jpg",
+        "description": "Highly trusted to deter soil-borne pests like white grubs and provide slow-release nutrients.",
+        "rating": 4.9, "reviews": 430
     },
     {
-        "id": 5,
-        "name": "YieldMax Seeds (Corn)",
-        "category": "Seeds",
-        "price": 120.00,
-        "image": "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-        "description": "High-yielding, drought-tolerant hybrid corn seeds treated for early pest resistance.",
-        "usage_instructions": "Sow at a depth of 2 inches with 8-inch spacing between plants in rows 30 inches apart.",
-        "crop_recommendation": ["Corn"],
-        "safety_instructions": "Seeds are treated with fungicides. Do not use for food, feed, or oil purposes.",
-        "rating": 4.9,
-        "reviews": 342,
-        "features": ["Drought Tolerant", "Pest Resistant", "High Yield"]
+        "id": 105, "name": "Shengdana Pend (Groundnut Cake)", "category": "Nitrogen Source", "price": 400,
+        "image": "assets/images/shengdana_pend.jpg",
+        "description": "Extensively used in Maharashtra as a rich, natural source of Nitrogen.",
+        "rating": 4.8, "reviews": 210
     },
     {
-        "id": 6,
-        "name": "Pro-Grow Activator",
-        "category": "Plant Growth Regulators",
-        "price": 55.00,
-        "image": "https://images.unsplash.com/photo-1592982537447-6f2acc22dcdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-        "description": "Stimulates root development, flowering, and fruit setting for maximum harvest.",
-        "usage_instructions": "Foliar spray: 1ml per liter during flowering stage and early fruit development.",
-        "crop_recommendation": ["Fruit Trees", "Vegetables", "Flowers"],
-        "safety_instructions": "Handle with care. Avoid contact with eyes and skin.",
-        "rating": 4.4,
-        "reviews": 67,
-        "features": ["Enhanced Rooting", "Increases Fruit Size"]
+        "id": 106, "name": "Karanja Pend (Karanja Cake)", "category": "Pesticide & Fertilizer", "price": 600,
+        "image": "assets/images/karanja_pend.jpg",
+        "description": "Excellent organic pesticide and fertilizer, great for orchards and vegetable patches.",
+        "rating": 4.5, "reviews": 115
+    },
+    {
+        "id": 107, "name": "Erandi Pend (Castor Cake)", "category": "Slow Release", "price": 280,
+        "image": "assets/images/erandi_pend.jpg",
+        "description": "Widely used for cash crops like cotton and soybean for slow nutrient release.",
+        "rating": 4.7, "reviews": 180
+    },
+    {
+        "id": 108, "name": "Phosphate Rich Manure (PROM)", "category": "Phosphorus Rich", "price": 150,
+        "image": "assets/images/prom.jpg",
+        "description": "The organic alternative to DAP. Perfect for root development in initial stages.",
+        "rating": 4.8, "reviews": 512
     }
 ]
-
